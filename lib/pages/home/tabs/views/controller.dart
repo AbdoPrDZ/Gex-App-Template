@@ -12,6 +12,8 @@ class ViewsTabController extends GetxController {
 
   final textEditController = TextEditController(name: 'text_edit');
 
+  File? pickedFile;
+
   int dropDownIndex = -1;
 
   final blurValueController = TextEditController(text: '5');

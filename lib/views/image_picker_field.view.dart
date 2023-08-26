@@ -130,7 +130,7 @@ class _ImagePickerFieldViewState extends State<ImagePickerFieldView> {
                     color: UIThemeColors.fieldBg,
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
-                      width: 1,
+                      width: 0.8,
                       color: state.hasError
                           ? UIThemeColors.danger
                           : UIThemeColors.field,

@@ -8,6 +8,7 @@ export 'dialogs.view.dart';
 export 'dropdown.view.dart';
 export 'dialogs.view.dart';
 export 'expanded.view.dart';
+export 'file_picker_field.view.dart';
 export 'image_picker_field.view.dart';
 export 'my_grid.view.dart';
 export 'network_image.view.dart';

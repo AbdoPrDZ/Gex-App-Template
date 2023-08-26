@@ -59,7 +59,7 @@ class DropDownView<T> extends StatelessWidget {
                     color: state.hasError
                         ? UIThemeColors.danger
                         : UIThemeColors.field,
-                    width: 1.8,
+                    width: 0.8,
                   ),
                 ),
                 child: Stack(

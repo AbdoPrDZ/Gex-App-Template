@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:get/get.dart';
 
 import '../../../../utils/utils.dart' as utils;
@@ -88,6 +90,30 @@ class ViewsTab extends utils.Page<ViewsTabController> {
                       return 'Password is required';
                     } else if (MDateTime.fromString(value) == null) {
                       return 'Please enter valid datetime';
+                    }
+                    return null;
+                  },
+                ),
+                const Divider(),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'FilePicker Field: ',
+                    style: TextStyle(fontSize: 20, color: UIThemeColors.text1),
+                  ),
+                ),
+                FilePickerFieldView<File>(
+                  label: "Pick File",
+                  hint: "Pick File",
+                  onPick: (file) {
+                    print(file?.path);
+                    controller.pickedFile = file;
+                  },
+                  validator: (value) {
+                    if (value == null) {
+                      return 'file is required';
+                    } else if (!value.existsSync()) {
+                      return 'The file is not exists';
                     }
                     return null;
                   },

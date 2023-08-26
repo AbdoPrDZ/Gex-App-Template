@@ -367,6 +367,7 @@ class _TextEditViewState extends State<TextEditView> {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(
+                        width: 0.8,
                         color: state.hasError
                             ? UIThemeColors.fieldDanger
                             : UIThemeColors.field,
@@ -374,23 +375,25 @@ class _TextEditViewState extends State<TextEditView> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                          color: state.hasError
-                              ? UIThemeColors.fieldDanger
-                              : UIThemeColors.fieldFocus,
-                          width: 1.6),
+                        width: 0.8,
+                        color: state.hasError
+                            ? UIThemeColors.fieldDanger
+                            : UIThemeColors.fieldFocus,
+                      ),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                          color: state.hasError
-                              ? UIThemeColors.fieldDanger
-                              : UIThemeColors.field,
-                          width: 1.6),
+                        width: 0.8,
+                        color: state.hasError
+                            ? UIThemeColors.fieldDanger
+                            : UIThemeColors.field,
+                      ),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     disabledBorder: OutlineInputBorder(
                       borderSide:
-                          BorderSide(color: UIThemeColors.fieldBg, width: 1.6),
+                          BorderSide(color: UIThemeColors.fieldBg, width: 0.8),
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
