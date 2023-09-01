@@ -269,6 +269,7 @@ class DrawerItem {
   final bool isAction;
   final Future Function()? onActionTab;
   final Widget Function(BuildContext context)? buildTab;
+  final Widget? Function(BuildContext context)? buildFloatingActionButton;
 
   const DrawerItem(
     this.text,
@@ -276,6 +277,7 @@ class DrawerItem {
     this.isAction = false,
     this.onActionTab,
     this.buildTab,
+    this.buildFloatingActionButton,
   })  : assert(
           !((isAction && buildTab != null) || (!isAction && buildTab == null)),
           'The DrawerItem can\'t be an action and have tab widget or does not have tab widget and is not action same time',

@@ -102,7 +102,10 @@ class _ExpandedViewState extends State<ExpandedView> {
               child: Flex(
                 direction: Axis.horizontal,
                 children: [
-                  Icon(expanded ? widget.expandedIcon : widget.unExpandedIcon),
+                  Icon(
+                    expanded ? widget.expandedIcon : widget.unExpandedIcon,
+                    color: UIThemeColors.text2,
+                  ),
                   widget.buildHeader(context),
                 ],
               ),

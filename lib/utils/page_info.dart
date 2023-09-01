@@ -5,5 +5,8 @@ class PageInfo {
   final Page Function() page;
   final bool isUnAuth;
 
-  PageInfo(this.route, this.page, {this.isUnAuth = false});
+  const PageInfo(this.route, this.page, {this.isUnAuth = false});
+
+  @override
+  operator ==(Object object) => object is String && object == route;
 }

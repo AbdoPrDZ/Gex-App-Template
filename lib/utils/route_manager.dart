@@ -5,10 +5,10 @@ import '../utils/utils.dart';
 export '../src/src.dart';
 
 class RouteManager {
-  static Future<T?>? to<T>(
+  static Future<T?>? to<T, AT>(
     PageInfo page, {
     bool clearHeaders = false,
-    T? arguments,
+    AT? arguments,
     int? id,
     bool preventDuplicates = true,
     Map<String, String>? parameters,

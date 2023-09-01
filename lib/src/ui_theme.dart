@@ -162,4 +162,7 @@ class UIThemeMode {
 
   bool get isDark => mode == dark.mode;
   bool get isLight => mode == light.mode;
+
+  @override
+  String toString() => mode;
 }

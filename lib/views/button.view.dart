@@ -140,11 +140,9 @@ class OutlineButtonView extends StatelessWidget {
     double size = 50,
     double? iconSize,
     EdgeInsets margin = EdgeInsets.zero,
-    EdgeInsets padding = const EdgeInsets.symmetric(
-      vertical: 13,
-      horizontal: 15,
-    ),
+    EdgeInsets padding = EdgeInsets.zero,
     Color? borderColor,
+    Color? iconColor,
     double borderRaduis = 50,
     double borderSize = 1.8,
   }) : this(
@@ -153,6 +151,7 @@ class OutlineButtonView extends StatelessWidget {
           child: Icon(
             icon,
             size: iconSize ?? size * 0.7,
+            color: iconColor,
           ),
           margin: margin,
           padding: padding,
